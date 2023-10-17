@@ -21,7 +21,7 @@
 - Marca a transação como completa (status: "completed")
 
 # Cadastro e consulta de chave Pix 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/cadastro-consulta-pix.png)
 
 # Dinâmica do processo
 1. Registra transação.
@@ -29,7 +29,7 @@
 3. Informa banco de origem que a transação foi confirmada pelo banco de destino com status: "confirmed".
 4. Finaliza a transação mudando o status para: "completed".
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/dinamica-processo.png)
 
 # Principais desafios
 
@@ -46,4 +46,4 @@
 - Trabalhar com um design focado em solucionar o problema de domínio
 
 # Estrutura e camadas do CodePix (clean architecture)
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/estrutura-camada.png)
