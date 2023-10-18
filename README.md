@@ -49,3 +49,4 @@
 ![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/estrutura-camada.png)
 
 
+Dúvidas: Preload, minuto 1:25:04 comando no cmd não executa
