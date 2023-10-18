@@ -47,3 +47,5 @@
 
 # Estrutura e camadas do CodePix (clean architecture)
 ![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/estrutura-camada.png)
+
+
