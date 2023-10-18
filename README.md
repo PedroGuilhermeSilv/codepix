@@ -82,7 +82,7 @@ Utiliza a mesma conexao TCP para enviar e receber dados do cliente e do servidor
 ![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/grpc-unary.png)
 
 # gRPC - API "Server streaming"
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/grpc-streaming.png)
+![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/groc-streaming.png)
 
 # gRPC - API "Client streaming"
 ![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/grpc-client-streaming.png)
@@ -127,9 +127,9 @@ Utiliza a mesma conexao TCP para enviar e receber dados do cliente e do servidor
 - Com replication factor o Kafka faz diversas copias de particoes de um Topic em diferentes brokes fazendo com que mesmo que uma maquina esteja fora do ar ele tenha a informacao completa.
 ![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication1.png)
 
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication1.png)
+![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication2.png)
 
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication1.png)
+![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication3.png)
 
 # Ecossitema
 - Kafka Connect
