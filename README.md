@@ -21,7 +21,7 @@
 - Marca a transação como completa (status: "completed")
 
 # Cadastro e consulta de chave Pix 
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/cadastro-consulta-pix.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/cadastro-consulta-pix.png)
 
 # Dinâmica do processo
 1. Registra transação.
@@ -29,7 +29,7 @@
 3. Informa banco de origem que a transação foi confirmada pelo banco de destino com status: "confirmed".
 4. Finaliza a transação mudando o status para: "completed".
 
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/dinamica-processo.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/dinamica-processo.png)
 
 # Principais desafios
 
@@ -46,7 +46,7 @@
 - Trabalhar com um design focado em solucionar o problema de domínio
 
 # Estrutura e camadas do CodePix (clean architecture)
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/estrutura-camada.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/estrutura-camada.png)
 
 
 #  gRPC
@@ -57,10 +57,10 @@
 - Streaming bidirecional utilizando HTTP/2
 
 # RPC -  Remote Procedure Call
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/grpc.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/grpc.png)
 
 # Protocol Burffers
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/protocol-buffers.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/protocol-buffers.png)
 
 - Primeiro é definido como deseja que os dados sejam estruturados — em um arquivo de extensão .proto.
 - Em seguida, esta definição é compilada e o resultado é um código-fonte automaticamente gerado na linguagem desejada — no momento que escrevo este post, as linguagens compatíveis são C++, C#, Go, Java e Python.
@@ -79,13 +79,13 @@ Utiliza a mesma conexao TCP para enviar e receber dados do cliente e do servidor
 - Headers sao comprimidos
 
 # gRPC - API "unary"
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/grpc-unary.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/grpc-unary.png)
 
 # gRPC - API "Server streaming"
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/groc-streaming.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/groc-streaming.png)
 
 # gRPC - API "Client streaming"
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/grpc-client-streaming.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/grpc-client-streaming.png)
 
 # REST vs gRPC
 - gRPC para comunicao entre servidor e browsers nao e eficiente. Porem, e muito bom para comunicacao de microservicos
@@ -111,25 +111,25 @@ Utiliza a mesma conexao TCP para enviar e receber dados do cliente e do servidor
     - O topico possui diversas particoes
     - Cada particao e definido por numero
     - Voce e obrigado a definir a quantidade de porticoes de um topico
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/topic.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/topic.png)
 
 - Producers: mandam mensagens
 - Consumer: lêem mensagens
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/producer-consumer.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/producer-consumer.png)
 
 # Kafka Cluster
 - Conjunto de Brokers
 - Cada Broker e um server
 - Cada Broker e responsavel por armazenar os dados de uma particao
 - Cada particao de Topic esta distribuido em diferentes brokes
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-cluster.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/kafka-cluster.png)
 
 - Com replication factor o Kafka faz diversas copias de particoes de um Topic em diferentes brokes fazendo com que mesmo que uma maquina esteja fora do ar ele tenha a informacao completa.
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication1.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/kafka-replication1.png)
 
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication2.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/kafka-replication2.png)
 
-![](https://github.com/PedroGuilhermeSilv/codepix-go/blob/main/documentation/img/kafka-replication3.png)
+![](https://github.com/PedroGuilhermeSilv/codepix/blob/main/documentation/img/kafka-replication3.png)
 
 # Ecossitema
 - Kafka Connect

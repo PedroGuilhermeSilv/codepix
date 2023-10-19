@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	PixService_RegisterPixKey_FullMethodName = "/github.com.codeedu.codepix.PixService/RegisterPixKey"
-	PixService_Find_FullMethodName           = "/github.com.codeedu.codepix.PixService/Find"
+	PixService_RegisterPixKey_FullMethodName = "/github.com.PedroGuilhermeSilv.codepix.PixService/RegisterPixKey"
+	PixService_Find_FullMethodName           = "/github.com.PedroGuilhermeSilv.codepix.PixService/Find"
 )
 
 // PixServiceClient is the client API for PixService service.
@@ -129,7 +129,7 @@ func _PixService_Find_Handler(srv interface{}, ctx context.Context, dec func(int
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var PixService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "github.com.codeedu.codepix.PixService",
+	ServiceName: "github.com.PedroGuilhermeSilv.codepix.PixService",
 	HandlerType: (*PixServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
