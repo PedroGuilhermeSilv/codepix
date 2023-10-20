@@ -10,7 +10,8 @@ RUN apt-get update && \
     go mod init github.com/PedroGuilhermeSilv/codepix && \
     go get google.golang.org/grpc/cmd/protoc-gen-go-grpc && \
     go get google.golang.org/protobuf/cmd/protoc-gen-go && \
-    go get github.com/spf13/cobra@v1.7.0 && \
+    go get github.com/spf13/cobra && \
+    go install github.com/spf13/cobra-cli@latest && \
     wget https://github.com/ktr0731/evans/releases/download/0.10.0/evans_linux_amd64.tar.gz && \
     tar -xzvf evans_linux_amd64.tar.gz && \
     mv evans ../bin && rm -f evans_linux_amd64.tar.gz

@@ -22,6 +22,7 @@ func StartGrpcServer(database *gorm.DB, port int) {
 	pixUseCase := usecase.PixUseCase{PixKeyRepository: pixRepository}
 	pixgrpcService := NewPixGrpcService(pixUseCase)
 	pb.RegisterPixServiceServer(grpcServer, pixgrpcService)
+
 	address := fmt.Sprintf("0.0.0.0:%d", port)
 	listener, err := net.Listen("tcp", address)
 
