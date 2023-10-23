@@ -139,4 +139,6 @@ Utiliza a mesma conexao TCP para enviar e receber dados do cliente e do servidor
 - ksqlDB
 - Streams
 
-Dúvidas: Aula 02: Preload, minuto 1:25:04 comando no cmd não executa
+
+
+Dúvidas: Aula 02: Preloa

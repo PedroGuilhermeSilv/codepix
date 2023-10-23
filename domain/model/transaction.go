@@ -8,6 +8,10 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
+func init() {
+	govalidator.SetFieldsRequiredByDefault(true)
+}
+
 const (
 	TransactionPending   string = "pending"
 	TransactionCompleted string = "completed"

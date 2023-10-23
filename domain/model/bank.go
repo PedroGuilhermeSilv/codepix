@@ -7,6 +7,10 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
+func init() {
+	govalidator.SetFieldsRequiredByDefault(true)
+}
+
 type Bank struct {
 	Base     `valid: "required"`
 	Code     string     `json: "code" gorm:"type:varchar(20)" valid:"notnull"`
@@ -33,6 +37,5 @@ func NewBank(code string, name string) (*Bank, error) {
 	if err != nil {
 		return nil, err
 	}
-
 	return &bank, nil
 }
